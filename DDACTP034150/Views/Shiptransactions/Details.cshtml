@@ -1,0 +1,50 @@
+﻿@model DDACTP034150.Models.Shiptransaction
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Shiptransaction</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.shipName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.shipName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DepartLocation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DepartLocation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DestinationLocation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DestinationLocation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TransportMethod)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TransportMethod)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.shiptranId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
